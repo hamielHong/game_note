@@ -29,7 +29,7 @@ bit_s(Bit) ->
 
 %% 获得二进制低第N位为1
 bit_n(N) ->
-    1 bsl N-1.
+    1 bsl (N-1).
 
 %% 将二进制某位置脏
 dirty(N) -> dirty(0, N).
